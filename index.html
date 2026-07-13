@@ -290,7 +290,7 @@ async function submitSignature(payload){
     localStorage.setItem('petition_demo_count', newCount);
     return { ok:true, count:newCount };
   }
-  // TODO: real backend call — must reject duplicates server-side
+  // TODO: real backend call — must reject duplicates servekr-side
   const res = await fetch(`${BACKEND_URL}/sign`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
